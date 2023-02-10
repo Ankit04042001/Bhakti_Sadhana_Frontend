@@ -1,0 +1,51 @@
+@use 'base'
+
+
+*
+    margin: 0px
+    padding: 0px
+    box-sizing: border-box
+
+
+body, html
+    width : 100vw
+    height : 100vh
+    overflow-x : hidden
+
+
+.App
+    position : absolute
+    top : 0
+    left : 0
+    width : 100%
+    height : 100%
+    z-index : -1
+    overflow : hidden
+
+
+.background-wrapper
+    position : relative
+    width : 100%
+    height : 100%
+    background-color : base.$background-color
+    display : flex
+    justify-content : center
+    align-items : center
+
+    @include base.tablet
+        align-items : end
+
+    @include base.desktop
+        align-items : end
+    
+    .divider 
+        width : 100%
+        height : 36%
+        background-color : #fff
+
+        @include base.tablet
+            height : 60%
+
+        @include base.desktop
+            height : 50%
+        

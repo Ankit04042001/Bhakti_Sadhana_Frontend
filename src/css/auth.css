@@ -1,0 +1,102 @@
+.modal-content {
+  padding: 10px;
+  background-color: #e9ebee;
+  border-radius: 10px;
+}
+.modal-content .modal-header {
+  padding-bottom: 5px;
+  display: none;
+}
+.modal-content .modal-header.active {
+  display: flex;
+}
+.modal-content .modal-header .modal-title {
+  padding-bottom: 0px;
+  width: 100%;
+  text-align: center;
+  font-size: 1.1rem;
+}
+.modal-content .modal-body {
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 10px;
+  background-color: #fff;
+}
+.modal-content .modal-body .container {
+  padding: 0px;
+}
+.modal-content .modal-body .container .main-body {
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #e9ebee;
+}
+.modal-content .modal-body .container .main-body .heading {
+  padding: 0px;
+  background-color: #e9ebee;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 500;
+  cursor: pointer;
+  display: none;
+}
+.modal-content .modal-body .container .main-body .heading.active {
+  display: block;
+}
+.modal-content .modal-body .container .main-body .heading .row {
+  padding: 0;
+}
+.modal-content .modal-body .container .main-body .heading .row .col {
+  padding: 0;
+}
+.modal-content .modal-body .container .main-body .heading .row .col a.sign-in, .modal-content .modal-body .container .main-body .heading .row .col a.sign-up {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #000;
+}
+.modal-content .modal-body .container .main-body .heading .row .col a.sign-in.active, .modal-content .modal-body .container .main-body .heading .row .col a.sign-up.active {
+  background-color: #fff;
+  border-top: 2px solid #2b3aa0;
+}
+.modal-content .modal-body .container .main-body .error {
+  margin: 5px;
+  font-size: 0.9rem;
+  color: red;
+  text-align: center;
+}
+.modal-content .modal-body .container .main-body form {
+  display: none;
+}
+.modal-content .modal-body .container .main-body form .form-control:focus {
+  box-shadow: none;
+  border: 1px solid #2b3aa0;
+}
+.modal-content .modal-body .container .main-body form .forget-password {
+  position: relative;
+  border: none;
+  color: #2b3aa0;
+  background-color: transparent;
+}
+.modal-content .modal-body .container .main-body form .forget-password:focus, .modal-content .modal-body .container .main-body form .forget-password:hover {
+  top: 2px;
+  left: 2px;
+  opacity: 0.9;
+  outline: none;
+}
+.modal-content .modal-body .container .main-body form .btn[type=submit] {
+  margin-top: 20px;
+  width: 100%;
+  background-color: #2b3aa0;
+}
+.modal-content .modal-body .container .main-body form .btn[type=submit]:hover {
+  opacity: 0.8;
+}
+.modal-content .modal-body .container .main-body form .btn[type=submit]:focus {
+  box-shadow: none;
+  opacity: 0.8;
+}
+.modal-content .modal-body .container .main-body form.active {
+  display: block;
+}
+
+/*# sourceMappingURL=auth.css.map */

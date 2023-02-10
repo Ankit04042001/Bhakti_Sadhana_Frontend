@@ -1,0 +1,114 @@
+$background-color : #2b3aa0
+
+$desktop : 1080px
+$tablet : 820px
+
+
+
+@mixin desktop
+    @media (min-width : $desktop)
+        @content
+
+@mixin tablet
+    @media (min-width : $tablet)
+        @content
+
+
+
+
+.header
+    padding : 10px
+    width : 100%
+    display : flex
+    align-items : center
+    justify-content : space-between
+
+
+    @include desktop
+        padding : 0px
+        margin : 0px
+
+
+    .logo
+        color : #fff
+        font-weight : bold
+
+        @include tablet
+            margin : 30px
+            font-size : 1.8rem
+
+        @include desktop
+            padding-top : 0px
+            padding-bottom : 0px
+            margin-top : 0px
+            margin-bottom : 0px
+            margin-left : 50px
+            font-size : 1.2rem
+
+    
+    .buttons
+        @include tablet
+            margin-right : 20px
+
+        .user, .menu
+            margin : 5px
+            color : #fff
+            font-size : 2.2rem
+            background-color : transparent
+            border : none
+
+            .user-icon, .menu-icon 
+                font-size : 2.2rem
+                color : #fff
+
+                @include tablet
+                    font-size : 3.5rem
+                
+
+                @include desktop 
+                    margin-top : 0px
+                    margin-bottom : 0px
+                    padding-top : 0px
+                    padding-bottom : 0px
+                    font-size : 2.4rem
+            
+
+            @include tablet
+                margin-right : 12px
+                
+
+
+
+.userSidebar, .menuSidebar
+    background-color : $background-color
+    color : #fff
+
+    @include tablet 
+        font-size : 1.6rem
+
+    @include desktop 
+        font-size : 1.1rem
+
+    .offcanvas-header 
+        .offcanvas-title
+            @include tablet
+                font-size : 1.6rem
+
+            @include desktop 
+                font-size : 1.4rem
+
+
+        .btn-close
+            font-size : 1.6rem
+            background : transparent url("data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 16 16%27 fill=%27%23fff%27%3e%3cpath d=%27M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z%27/%3e%3c/svg%3e") center/1em auto no-repeat
+            opacity : 0.5
+
+            &:hover
+                opacity : 1
+
+            &:focus
+                border : none
+                box-shadow : none
+
+            @include desktop
+                font-size : 1.2rem

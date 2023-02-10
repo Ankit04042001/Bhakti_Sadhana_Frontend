@@ -1,0 +1,58 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body, html {
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+.App {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.background-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #2b3aa0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  .background-wrapper {
+    align-items: end;
+  }
+}
+@media (min-width: 1080px) {
+  .background-wrapper {
+    align-items: end;
+  }
+}
+.background-wrapper .divider {
+  width: 100%;
+  height: 36%;
+  background-color: #fff;
+}
+@media (min-width: 768px) {
+  .background-wrapper .divider {
+    height: 60%;
+  }
+}
+@media (min-width: 1080px) {
+  .background-wrapper .divider {
+    height: 50%;
+  }
+}
+
+/*# sourceMappingURL=app.css.map */

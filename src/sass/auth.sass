@@ -1,0 +1,102 @@
+@use 'base.sass'
+
+.modal-content
+    padding : 10px
+    background-color : #e9ebee
+    border-radius : 10px
+
+    
+    .modal-header
+        padding-bottom : 5px
+        display : none
+
+        &.active 
+            display : flex
+        .modal-title 
+            padding-bottom : 0px
+            width : 100%
+            text-align : center
+            font-size : 1.1rem
+
+    
+            
+    
+
+    .modal-body
+        padding : 10px
+        background-color : #fff
+        border-radius : 10px
+        background-color : #fff
+
+        .container
+            padding : 0px
+
+            .main-body  
+                padding : 10px
+                background-color : #fff
+                border : 1px solid #e9ebee
+
+                .heading
+                    padding : 0px
+                    background-color : #e9ebee
+                    text-align : center
+                    font-size : 1.1rem
+                    font-weight : 500
+                    cursor : pointer
+                    display : none
+
+                    &.active
+                        display : block
+
+                    .row
+                        padding : 0
+                        .col
+                            padding : 0
+                            a.sign-in, a.sign-up
+                                display : block
+                                padding : 10px
+                                text-decoration : none
+                                color : #000
+                            a.sign-in.active, a.sign-up.active    
+                                background-color : #fff
+                                border-top : 2px solid base.$background-color
+
+                    
+                .error
+                    margin : 5px
+                    font-size : 0.9rem
+                    color : red
+                    text-align : center
+
+            
+                form
+                    display : none
+
+                    .form-control:focus
+                        box-shadow : none
+                        border : 1px solid base.$background-color
+
+                    .forget-password
+                        position : relative
+                        border : none
+                        color : base.$background-color
+                        background-color : transparent
+                        
+                        &:focus, &:hover
+                            top : 2px
+                            left : 2px
+                            opacity : 0.9
+                            outline : none
+                    .btn[type=submit]
+                        margin-top : 20px
+                        width : 100%
+                        background-color : base.$background-color
+
+                        &:hover
+                            opacity : 0.8
+                        &:focus
+                            box-shadow : none
+                            opacity : 0.8
+                            
+                form.active 
+                    display : block

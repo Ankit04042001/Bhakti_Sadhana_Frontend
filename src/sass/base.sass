@@ -1,0 +1,15 @@
+$background-color : #2b3aa0
+
+$desktop : 1080px
+$tablet : 768px
+
+
+
+@mixin desktop
+    @media (min-width : $desktop)
+        @content
+
+@mixin tablet
+    @media (min-width : $tablet)
+        @content
+

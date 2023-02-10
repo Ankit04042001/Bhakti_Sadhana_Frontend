@@ -1,0 +1,76 @@
+@use 'base.sass'
+
+
+.carousel-inner
+    margin : 0 auto
+    width : 90%
+
+    @include base.tablet
+        width : 80%
+        margin-top : 30px
+
+    @include base.desktop
+        width : 40%
+        margin-top : 0px
+
+        
+    .carousel-item
+        width : 100%
+        img
+            height : 33vh
+            object-fit : cover
+
+            @include base.tablet
+                height : 35vh
+
+            @include base.desktop
+                height : 50vh
+
+        .carousel-caption
+            padding : 10px 40px
+            position : relative
+            left : 0
+            top : 0
+            z-index : -1
+            color : black
+            text-align : unset
+
+            @include base.tablet
+                font-size : 2rem
+
+            @include base.desktop
+                font-size : 1.4rem
+                margin-bottom : 0
+            
+            .quote-icon
+                position : absolute
+                top : 0
+                left : 0
+                font-size : 2.2rem
+                color : rgba(0, 0, 0, 0.5)
+                transform : rotate(180deg)
+            p
+                @include base.desktop
+                    margin-bottom : 0px
+            .signature
+                margin : 0
+                padding-top : 0
+                color : green
+                text-align : end
+
+                @include base.desktop
+                    margin : 0 
+                    padding : 0
+                
+
+.carousel-control-next, .carousel-control-prev
+    height : 60%
+    color : #fff
+    opacity : 1
+
+.carousel-control-next  
+    right : -18px
+
+.carousel-control-prev  
+    left : -18px
+

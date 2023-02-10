@@ -1,0 +1,65 @@
+.wrapper a {
+  display: block;
+  text-decoration: none;
+  color: black;
+}
+.wrapper a:hover {
+  color: #2b3aa0;
+}
+
+.menu-item-wrapper {
+  margin: 5px;
+  padding: 10px;
+  height: 100px;
+  border: 1px solid black;
+  border-radius: 20px;
+  background-color: #fff;
+  text-align: center;
+  text-align-display: block;
+  text-align-text-decoration: none;
+}
+.menu-item-wrapper:hover {
+  cursor: pointer;
+}
+@media (min-width: 768px) {
+  .menu-item-wrapper {
+    height: 150px;
+  }
+}
+@media (min-width: 1080px) {
+  .menu-item-wrapper {
+    width: 190px;
+    height: 120px;
+  }
+}
+.menu-item-wrapper .icon > * {
+  font-size: 3rem;
+  color: #2b3aa0;
+}
+@media (min-width: 768px) {
+  .menu-item-wrapper .icon > * {
+    font-size: 5rem;
+  }
+}
+@media (min-width: 1080px) {
+  .menu-item-wrapper .icon > * {
+    font-size: 4rem;
+  }
+}
+.menu-item-wrapper .name {
+  text-transform: uppercase;
+}
+@media (min-width: 768px) {
+  .menu-item-wrapper .name {
+    font-size: 1.5rem;
+    color: #2b3aa0;
+  }
+}
+@media (min-width: 768px) {
+  .menu-item-wrapper .name {
+    font-size: 1.2rem;
+    color: #2b3aa0;
+  }
+}
+
+/*# sourceMappingURL=menu-div.css.map */

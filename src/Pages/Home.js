@@ -1,10 +1,10 @@
 import React, {useEffect, useState} from 'react';
-import Header from './component/Header';
+import Header from '../component/Header';
 import Carousel from 'react-bootstrap/Carousel';
 import FormatQuoteIcon from '@mui/icons-material/FormatQuote';
-import Footer from './component/Footer';
-import './css/home.css';
-import './css/menu-div.css';
+import Footer from '../component/Footer';
+import '../css/home.css';
+import '../css/menu-div.css';
 
 const Home = () => {
     const [index, setIndex] = useState(0);   
@@ -13,9 +13,6 @@ const Home = () => {
     };
 
 
-    useEffect(()=>{
-       
-    },[]);
     return (
         <>
             <Header />
@@ -23,7 +20,7 @@ const Home = () => {
                 <Carousel.Item>
                     <img
                         className="d-block w-100"
-                        src={require('./images/sadguru.png')}
+                        src={require('../images/sadguru.png')}
                         alt="First slide"
                     />
                     <Carousel.Caption>
@@ -35,7 +32,7 @@ const Home = () => {
                 <Carousel.Item>
                     <img
                         className="d-block w-100"
-                        src={require('./images/sadguru2.png')}
+                        src={require('../images/sadguru2.png')}
                         alt="Second slide"
                     />
 
@@ -48,7 +45,7 @@ const Home = () => {
                 <Carousel.Item>
                     <img
                         className="d-block w-100"
-                        src={require('./images/sadguru.png')}
+                        src={require('../images/sadguru.png')}
                         alt="Third slide"
                     />
 

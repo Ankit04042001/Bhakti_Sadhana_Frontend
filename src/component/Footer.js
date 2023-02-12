@@ -99,7 +99,7 @@ const Footer = () => {
                             </MenuDiv>
                         </Link>
                         }
-                    <Link to='/' replace={true}>
+                    <Link to='attendence' replace={true}>
                         <MenuDiv>
                             < CalendarMonthOutlinedIcon />
                             Attendence

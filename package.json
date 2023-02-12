@@ -1,7 +1,7 @@
 {
   "name": "bhakti-sadhna-app",
   "version": "0.1.0",
-  "homepage": "https://Ankit04042001.github.io/react-gh-pages",
+  "homepage": "https://Ankit04042001.github.io/Bhakti_Sadhana_Frontend",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.10.5",
@@ -24,11 +24,13 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "deploy": "serve -s build"
+    "deploy2": "serve -s build"
   },
   "eslintConfig": {
     "extends": [

@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/Bhakti_Sadhana_Frontend/static/css/main.aec57846.css",
-    "main.js": "/Bhakti_Sadhana_Frontend/static/js/main.511b12ed.js",
+    "main.js": "/Bhakti_Sadhana_Frontend/static/js/main.88df2120.js",
     "static/js/787.f304bbd7.chunk.js": "/Bhakti_Sadhana_Frontend/static/js/787.f304bbd7.chunk.js",
     "static/media/sadguru.png": "/Bhakti_Sadhana_Frontend/static/media/sadguru.32391580e1430213c76c.png",
     "static/media/sadguru2.png": "/Bhakti_Sadhana_Frontend/static/media/sadguru2.5895ce2f27efaa0ecc46.png",
     "index.html": "/Bhakti_Sadhana_Frontend/index.html",
     "main.aec57846.css.map": "/Bhakti_Sadhana_Frontend/static/css/main.aec57846.css.map",
-    "main.511b12ed.js.map": "/Bhakti_Sadhana_Frontend/static/js/main.511b12ed.js.map",
+    "main.88df2120.js.map": "/Bhakti_Sadhana_Frontend/static/js/main.88df2120.js.map",
     "787.f304bbd7.chunk.js.map": "/Bhakti_Sadhana_Frontend/static/js/787.f304bbd7.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.aec57846.css",
-    "static/js/main.511b12ed.js"
+    "static/js/main.88df2120.js"
   ]
 }

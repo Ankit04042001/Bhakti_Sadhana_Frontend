@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, {useState} from 'react';
 import Header from '../component/Header';
 import Carousel from 'react-bootstrap/Carousel';
 import FormatQuoteIcon from '@mui/icons-material/FormatQuote';

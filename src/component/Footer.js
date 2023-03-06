@@ -13,7 +13,6 @@ import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
 import { Button } from 'react-bootstrap';
 import { Link, useNavigate } from 'react-router-dom';
 import '../css/footer.css';
-import { RequireNotAuth } from '../RequireAuth';
 import { authContext } from './Context';
 
 

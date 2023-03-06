@@ -1,5 +1,5 @@
 import React, { useContext, useEffect} from 'react'
-import { redirect, useNavigate } from 'react-router-dom';
+import {useNavigate } from 'react-router-dom';
 import { authContext, loadingContext } from '../component/Context';
 import {logout} from '../authFunctions/authFunction';
 import {BroadcastChannel} from 'broadcast-channel';
@@ -8,7 +8,7 @@ import {BroadcastChannel} from 'broadcast-channel';
 export const logoutChannel = new BroadcastChannel('logout');
 
 const Logout = () => {
-    const {isLoading, setIsLoading} = useContext(loadingContext);
+    const loader = useContext(loadingContext);
     const user = useContext(authContext);
     const navigate = useNavigate();
 
@@ -18,10 +18,10 @@ const Logout = () => {
     
     
     const logout2 = async ()=>{
-      setIsLoading(true);
+      loader.setIsLoading(true);
       await logout();
       user.setUser(null);
-      setIsLoading(false);
+      loader.setIsLoading(false);
       navigate('/', {replace:true});
     }
     

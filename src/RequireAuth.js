@@ -20,7 +20,7 @@ export const RequireNotAuth = (props) =>{
         }else{
             findUser();
         }
-    },[])
+    },[]);
     return <>
         {props.children}
     </>
@@ -50,4 +50,4 @@ const RequireAuth = (props) => {
   </>
 }
 
-export default RequireAuth
+export default RequireAuth 

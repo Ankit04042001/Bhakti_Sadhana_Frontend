@@ -70,10 +70,10 @@ export async function reset_otp(otp, password, password2){
 
 export async function attendence(punch_status, day){
     const api_url = `${config.host}/attendence/`;
-    const date = {
+    const data = {
         'punch_status' : punch_status,
         'date' : day
     }
-    return axios.post(api_url, {'withCredentials' : true})
+    return axios.post(api_url, data, {'withCredentials' : true})
 }
 

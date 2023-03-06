@@ -1,6 +1,6 @@
 import React, {useContext, useState } from 'react'
 import {Form, Button} from 'react-bootstrap'
-import { useNavigate, Link, useLocation } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import { authContext, loadingContext } from '../component/Context';
 import {login} from '../authFunctions/authFunction';
 
@@ -11,7 +11,6 @@ const SignIn = (props) => {
     const [password, setPassword] = useState(null);
     const [error, setError] = useState(null);
     const {isLoading, setIsLoading} = useContext(loadingContext);
-    const location = useLocation();
     
 
     const user = useContext(authContext);
@@ -36,9 +35,7 @@ const SignIn = (props) => {
             navigate('/', {replace:true});
         }else{
             setIsLoading(false);
-            setError(res.data.message);
-            navigate('/error', {replace:true});
-            
+            setError(res.data.message);            
         }
     });
 

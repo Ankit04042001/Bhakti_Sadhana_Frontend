@@ -1,4 +1,4 @@
-import React, {useEffect, useRef, useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import { Modal, Container, Row, Col } from 'react-bootstrap';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import ForgetPassword from '../authForm/ForgetPassword';
@@ -46,20 +46,20 @@ const Auth = (props) => {
     });
 
     useEffect(()=>{
-        if(location.pathname.search('sign-in') != -1){
+        if(location.pathname.search('sign-in') !== -1){
             props.handleShow(true);    
             handleSignInForm();
         }
-        if(location.pathname.search('sign-up') != -1){
+        if(location.pathname.search('sign-up') !== -1){
             props.handleShow(true);    
             handleSignUpForm();
         }
-        if(location.pathname.search('forget-password') != -1){
+        if(location.pathname.search('forget-password') !== -1){
             props.handleShow(true);    
             handleForgetPasswordForm();
         }
-        if(location.pathname.search('otp') != -1 ){
-            if(location.state=='forget-password' || location.state=='register'){
+        if(location.pathname.search('otp') !== -1 ){
+            if(location.state==='forget-password' || location.state==='register'){
                 props.handleShow(true);    
                 handleOtpForm();
             }else{

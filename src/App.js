@@ -15,7 +15,7 @@ import Error from './Pages/Error';
 
 
 function App() {
-  const { isLoading, setIsLoading } = useContext(loadingContext);
+  const { isLoading } = useContext(loadingContext);
   const navigate = useNavigate();
 
 

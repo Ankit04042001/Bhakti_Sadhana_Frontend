@@ -14,7 +14,7 @@ import { LockOpenOutlined, LockOutlined } from '@mui/icons-material';
 const Header = () => {
   const [showUser, setShowUser] = useState(false);
   const [showMenu, setShowMenu] = useState(false);
-  const { user, logout } = useContext(authContext)
+  const { user } = useContext(authContext)
   const handleCloseUser = () => setShowUser(false);
   const handleShowUser = () => setShowUser(true);
   const handleCloseMenu = () => setShowMenu(false);

@@ -51,6 +51,7 @@ const Otp = forwardRef((props, ref) => {
         if(location.state==='register'){
             const res = await reg_otp(otp);
             if(res.data.status){
+                setIsLoading(false);
                 alert(res.data.message);
                 navigate('/');
             }else{
